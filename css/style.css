@@ -216,7 +216,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
-  align-self: stretch;
 }
 
 .logo-icon--footer {
