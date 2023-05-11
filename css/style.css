@@ -1,0 +1,119 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: var(--white);
+  min-height: 100vh;
+  background-color: var(--white);
+  font-size: 1.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-one {
+  height: 100vh;
+  background-image: url(/images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 5rem 11rem;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vr-gallery {
+  display: flex;
+  padding: 11rem 11rem;
+}
+
+.logo-box {
+  flex: 0 0 auto;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__item {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 12%;
+  animation: moveInLeft 1s ease-out;
+}
+.hero__textbox {
+  padding: 3rem;
+  border: 2px solid var(--white);
+  width: 58%;
+}
+.hero__text {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 7rem;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.gallery-image__item {
+  margin-right: -17rem;
+}
+
+.gallery-text {
+  color: var(--black);
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+  background-color: var(--white);
+  align-self: flex-end;
+}
+.gallery-text__large {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 5rem;
+}
+.gallery-text__small {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,89 @@
+///////////////////////////////////////
+// LOGO
+
+.logo-box {
+    flex: 0 0 auto;
+}
+
+///////////////////////////////////////
+// NAVBAR
+
+.navbar {
+    display: flex;
+
+    &__item {
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+///////////////////////////////////////
+// HERO TEXT
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 12%;
+    animation: moveInLeft 1s ease-out;
+
+    &__textbox {
+        padding: 3rem;
+        border: 2px solid var(--white);
+        width: 58%;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 7rem;
+    }
+
+}
+
+///////////////////////////////////////
+// HERO ANIMATION
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.gallery-image {
+    &__item {
+        margin-right: -17rem;
+    }
+}
+
+///////////////////////////////////////
+// VR GALLERY TEXT
+.gallery-text {
+    color: var(--black);
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+    background-color: var(--white);
+    align-self: flex-end;
+
+    &__large {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 5rem;
+    }
+
+    &__small {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,19 @@
+.section-one {
+    height: 100vh;
+    background-image: url(/images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 5rem 11rem;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.vr-gallery {
+    display: flex;
+    padding: 11rem 11rem;
+}

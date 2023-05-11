@@ -1,0 +1,36 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: var(--white);
+    min-height: 100vh;
+    background-color: var(--white);
+    font-size: 1.5rem;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
