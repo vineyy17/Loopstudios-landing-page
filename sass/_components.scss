@@ -19,12 +19,23 @@
         margin-right: 2rem;
         display: flex;
         align-items: center;
-        transition: border-bottom .2s;
-        backface-visibility: hidden;
+        position: relative;
+    }
 
-        &:hover {
-            border-bottom: 1px solid var(--white);
-        }
+    &__item::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 1.5px;
+        bottom: 0;
+        background-color: var(--white);
+        transition: width 0.3s ease;
+    }
+
+    &__item:hover::after {
+        width: 50%;
     }
 }
 
@@ -131,7 +142,7 @@
         font-family: 'Alata', sans-serif;
         font-weight: 400;
         font-size: 1.8rem;
-        border: 1px solid var(--black);
+        border: 1.5px solid var(--black);
         background-color: transparent;
         display: flex;
         align-self: center;
@@ -213,4 +224,17 @@
 
 .logo-icon--footer {
     margin: .5rem;
+    padding: .7rem 0;
+    cursor: pointer;
+    border-bottom: 1.5px solid transparent;
+    transition: border-color .3s ease;
+
+    &:hover {
+        border-color: var(--white);
+    }
 }
+
+.navbar__item--footer {
+    padding: .7rem 0;
+}
+
