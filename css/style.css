@@ -100,20 +100,22 @@ body {
 
 .gallery-text {
   color: var(--black);
-  padding: 2rem;
+  padding-top: 7.5rem;
+  padding-left: 7.5rem;
   position: relative;
   z-index: 10;
   background-color: var(--white);
   align-self: flex-end;
+  width: 60%;
 }
 .gallery-text__large {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .gallery-text__small {
-  margin-top: 2rem;
-  font-size: 2rem;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
