@@ -57,6 +57,8 @@ body {
 
 .navbar {
   display: flex;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
 }
 .navbar__item {
   margin-right: 2rem;
@@ -99,7 +101,6 @@ body {
 }
 
 .gallery-text {
-  color: var(--black);
   padding-top: 7.5rem;
   padding-left: 7.5rem;
   position: relative;
@@ -112,10 +113,48 @@ body {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 4rem;
+  color: var(--black);
 }
 .gallery-text__small {
   margin-top: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  color: var(--dark-gray);
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+.creations {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 11rem;
+  align-items: center;
+}
+.creations > * {
+  text-transform: uppercase;
+}
+.creations__heading {
+  color: var(--black);
+  font-weight: 300;
+  font-size: 4rem;
+  display: flex;
+  padding-top: 1rem;
+}
+.creations__button {
+  padding: 1rem 4rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  border: 1px solid var(--black);
+  background-color: transparent;
+  display: flex;
+  align-self: center;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.creations__button:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,8 @@
 
 .navbar {
     display: flex;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
 
     &__item {
         margin-right: 2rem;
@@ -69,7 +71,6 @@
 ///////////////////////////////////////
 // VR GALLERY TEXT
 .gallery-text {
-    color: var(--black);
     padding-top: 7.5rem;
     padding-left: 7.5rem;
     position: relative;
@@ -82,10 +83,54 @@
         text-transform: uppercase;
         font-weight: 300;
         font-size: 4rem;
+        color: var(--black);
     }
 
     &__small {
         margin-top: 2.5rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        color: var(--dark-gray);
+        font-family: 'Alata', sans-serif;
+        font-weight: 400;
     }
+}
+
+.creations {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 11rem;
+    align-items: center;
+
+    & > * {
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        color: var(--black);
+        font-weight: 300;
+        font-size: 4rem;
+        display: flex;
+        padding-top: 1rem;
+    }
+
+    &__button {
+        padding: 1rem 4rem;
+        font-family: 'Alata', sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        border: 1px solid var(--black);
+        background-color: transparent;
+        display: flex;
+        align-self: center;
+        letter-spacing: .4rem;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            background-color: var(--black);
+            color: var(--white);
+        }
+    }
+
 }
