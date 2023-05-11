@@ -53,24 +53,31 @@ body {
 
 .picture-gallery {
   display: flex;
-  padding: 2rem 9rem;
+  padding: 0 9rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .logo-box {
   flex: 0 0 auto;
+  cursor: pointer;
 }
 
 .navbar {
   display: flex;
   font-family: "Alata", sans-serif;
   font-weight: 400;
+  cursor: pointer;
 }
 .navbar__item {
   margin-right: 2rem;
   display: flex;
   align-items: center;
+  transition: border-bottom 0.2s;
+  backface-visibility: hidden;
+}
+.navbar__item:hover {
+  border-bottom: 1px solid var(--white);
 }
 
 .hero {
@@ -192,6 +199,28 @@ body {
 }
 .picture-gallery__div:hover .picture-gallery__text {
   color: var(--black);
+}
+
+.footer {
+  background-color: var(--black);
+  margin-top: 10rem;
+  padding: 5rem 9rem;
+}
+.footer__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  align-self: stretch;
+}
+
+.logo-icon--footer {
+  margin: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

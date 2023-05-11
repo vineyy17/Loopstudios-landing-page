@@ -3,6 +3,7 @@
 
 .logo-box {
     flex: 0 0 auto;
+    cursor: pointer;
 }
 
 ///////////////////////////////////////
@@ -12,11 +13,18 @@
     display: flex;
     font-family: 'Alata', sans-serif;
     font-weight: 400;
+    cursor: pointer;
 
     &__item {
         margin-right: 2rem;
         display: flex;
         align-items: center;
+        transition: border-bottom .2s;
+        backface-visibility: hidden;
+
+        &:hover {
+            border-bottom: 1px solid var(--white);
+        }
     }
 }
 
@@ -178,4 +186,31 @@
         color: var(--black);
     }
 
+}
+
+
+///////////////////////////////////////
+// PICTURE GALLERY 
+.footer {
+    background-color: var(--black);
+    margin-top: 10rem;
+    padding: 5rem 9rem;
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        align-self: stretch;
+    }
+}
+
+.logo-icon--footer {
+    margin: .5rem;
 }
