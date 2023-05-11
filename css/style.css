@@ -37,7 +37,7 @@ body {
   background-image: url(/images/desktop/image-hero.jpg);
   background-size: cover;
   background-position: top;
-  padding: 5rem 11rem;
+  padding: 5rem 9rem;
   position: relative;
 }
 
@@ -48,7 +48,14 @@ body {
 
 .vr-gallery {
   display: flex;
-  padding: 11rem 11rem;
+  padding: 9rem 9rem;
+}
+
+.picture-gallery {
+  display: flex;
+  padding: 2rem 9rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .logo-box {
@@ -69,7 +76,7 @@ body {
 .hero {
   display: flex;
   justify-content: flex-start;
-  margin-top: 12%;
+  margin-top: 11%;
   animation: moveInLeft 1s ease-out;
 }
 .hero__textbox {
@@ -101,23 +108,24 @@ body {
 }
 
 .gallery-text {
-  padding-top: 7.5rem;
-  padding-left: 7.5rem;
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-bottom: 0.2rem;
   position: relative;
   z-index: 10;
   background-color: var(--white);
   align-self: flex-end;
-  width: 60%;
+  width: 50%;
 }
 .gallery-text__large {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: var(--black);
 }
 .gallery-text__small {
   margin-top: 2.5rem;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   color: var(--dark-gray);
   font-family: "Alata", sans-serif;
   font-weight: 400;
@@ -126,7 +134,7 @@ body {
 .creations {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 11rem;
+  padding: 4rem 9rem;
   align-items: center;
 }
 .creations > * {
@@ -155,6 +163,28 @@ body {
 .creations__button:hover {
   background-color: var(--black);
   color: var(--white);
+}
+
+.picture-gallery__div {
+  position: relative;
+}
+.picture-gallery__text {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  transform: translate(-40%, 60%);
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+.picture-gallery__text--grid-text {
+  width: 40%;
+}
+.picture-gallery__image {
+  cursor: pointer;
+}
+.picture-gallery__image:hover {
+  filter: opacity(0.4);
 }
 
 /*# sourceMappingURL=style.css.map */

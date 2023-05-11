@@ -26,7 +26,7 @@
 .hero {
     display: flex;
     justify-content: flex-start;
-    margin-top: 12%;
+    margin-top: 11%;
     animation: moveInLeft 1s ease-out;
 
     &__textbox {
@@ -71,35 +71,39 @@
 ///////////////////////////////////////
 // VR GALLERY TEXT
 .gallery-text {
-    padding-top: 7.5rem;
-    padding-left: 7.5rem;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    padding-bottom: .2rem;
     position: relative;
     z-index: 10;
     background-color: var(--white);
     align-self: flex-end;
-    width: 60%;
+    width: 50%;
 
     &__large {
         text-transform: uppercase;
         font-weight: 300;
-        font-size: 4rem;
+        font-size: 4.5rem;
         color: var(--black);
     }
 
     &__small {
         margin-top: 2.5rem;
-        font-size: 1.4rem;
+        font-size: 1.45rem;
         color: var(--dark-gray);
         font-family: 'Alata', sans-serif;
         font-weight: 400;
     }
 }
 
+///////////////////////////////////////
+// CREATIONS SECTION PLUS CHILDREN
+
 .creations {
 
     display: flex;
     justify-content: space-between;
-    padding: 5rem 11rem;
+    padding: 4rem 9rem;
     align-items: center;
 
     & > * {
@@ -133,4 +137,47 @@
         }
     }
 
+}
+
+
+///////////////////////////////////////
+// PICTURE GALLERY 
+
+.picture-gallery {
+
+    &__div {
+        position: relative;
+    }
+
+    &__text {
+        position: absolute;
+        top: 65%; 
+        left: 40%;
+        transform: translate(-40%, 60%);
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: left;
+
+        &--grid-text {
+            width: 40%;
+        }
+    }
+
+    &__image {
+        cursor: pointer;
+
+        &:hover {
+            filter: opacity(0.4);
+        }
+    }
+
+    // &__image:hover &__text {
+    //     color: black;
+    // }
+
+
+
+    // &:hover &__image {
+    //     filter: opacity();
+    // }
 }
