@@ -176,15 +176,22 @@ body {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: left;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 .picture-gallery__text--grid-text {
   width: 40%;
 }
 .picture-gallery__image {
   cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 1.5rem;
 }
-.picture-gallery__image:hover {
-  filter: opacity(0.4);
+.picture-gallery__div:hover .picture-gallery__image {
+  opacity: 0.4;
+}
+.picture-gallery__div:hover .picture-gallery__text {
+  color: var(--black);
 }
 
 /*# sourceMappingURL=style.css.map */

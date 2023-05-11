@@ -139,7 +139,6 @@
 
 }
 
-
 ///////////////////////////////////////
 // PICTURE GALLERY 
 
@@ -157,6 +156,8 @@
         font-size: 3rem;
         text-transform: uppercase;
         text-align: left;
+        transition: color 0.3s ease;
+        cursor: pointer;
 
         &--grid-text {
             width: 40%;
@@ -165,19 +166,16 @@
 
     &__image {
         cursor: pointer;
-
-        &:hover {
-            filter: opacity(0.4);
-        }
+        transition: opacity 0.3s ease;
+        margin-top: 1.5rem;
     }
 
-    // &__image:hover &__text {
-    //     color: black;
-    // }
+    &__div:hover &__image {
+        opacity: 0.4;
+    }
 
+    &__div:hover &__text {
+        color: var(--black);
+    }
 
-
-    // &:hover &__image {
-    //     filter: opacity();
-    // }
 }
