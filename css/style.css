@@ -25,6 +25,16 @@ html {
     font-size: 56.25%;
   }
 }
+@media only screen and (max-width: 71em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 58.3em) {
+  html {
+    font-size: 43.7%;
+  }
+}
 @media only screen and (min-width: 103em) {
   html {
     font-size: 81.25%;
@@ -86,6 +96,13 @@ body {
     padding: 8rem 5rem;
   }
 }
+@media only screen and (max-width: 58.3em) {
+  .vr-gallery {
+    flex-direction: column;
+    align-items: center;
+    padding: 9rem 0;
+  }
+}
 @media only screen and (min-width: 91em) {
   .vr-gallery {
     padding: 12rem 15rem;
@@ -106,6 +123,11 @@ body {
 @media only screen and (max-width: 78em) {
   .picture-gallery {
     padding: 3rem 5rem;
+  }
+}
+@media only screen and (max-width: 58.3em) {
+  .picture-gallery {
+    justify-content: flex-end;
   }
 }
 @media only screen and (min-width: 91em) {
@@ -157,21 +179,6 @@ body {
   margin-top: 11%;
   animation: moveInLeft 1s ease-out;
 }
-@media only screen and (max-width: 78em) {
-  .hero {
-    margin-top: 14%;
-  }
-}
-@media only screen and (min-width: 91em) {
-  .hero {
-    margin-top: 12%;
-  }
-}
-@media only screen and (min-width: 103em) {
-  .hero {
-    margin-top: 13%;
-  }
-}
 .hero__textbox {
   padding: 3rem;
   border: 2px solid var(--white);
@@ -199,6 +206,13 @@ body {
 .gallery-image__item {
   margin-right: -17rem;
 }
+@media only screen and (max-width: 58.3em) {
+  .gallery-image__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .gallery-text {
   padding-top: 10rem;
@@ -214,6 +228,15 @@ body {
   .gallery-text {
     padding-top: 4rem;
     padding-left: 4rem;
+  }
+}
+@media only screen and (max-width: 58.3em) {
+  .gallery-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 @media only screen and (min-width: 91em) {
@@ -234,6 +257,12 @@ body {
   font-size: 4.5rem;
   color: var(--black);
 }
+@media only screen and (max-width: 58.3em) {
+  .gallery-text__large {
+    width: 50%;
+    font-size: 4rem;
+  }
+}
 @media only screen and (min-width: 103em) {
   .gallery-text__large {
     font-size: 5rem;
@@ -245,6 +274,13 @@ body {
   color: var(--dark-gray);
   font-family: "Alata", sans-serif;
   font-weight: 400;
+}
+@media only screen and (max-width: 58.3em) {
+  .gallery-text__small {
+    width: 50%;
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
 }
 @media only screen and (min-width: 91em) {
   .gallery-text__small {
@@ -312,6 +348,19 @@ body {
 @media only screen and (max-width: 78em) {
   .picture-gallery__div {
     width: 25%;
+  }
+}
+@media only screen and (max-width: 71em) {
+  .picture-gallery__div {
+    width: 30%;
+  }
+  .picture-gallery__div:nth-child(n+7) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 58.3em) {
+  .picture-gallery__div {
+    width: 50%;
   }
 }
 @media only screen and (min-width: 103em) {
