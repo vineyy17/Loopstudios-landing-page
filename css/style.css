@@ -20,6 +20,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 78em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 @media only screen and (min-width: 103em) {
   html {
     font-size: 81.25%;
@@ -50,6 +55,11 @@ body {
   padding: 5rem 9rem;
   position: relative;
 }
+@media only screen and (max-width: 78em) {
+  .section-one {
+    padding: 7rem 5rem;
+  }
+}
 @media only screen and (min-width: 91em) {
   .section-one {
     padding: 7rem 15rem;
@@ -71,6 +81,11 @@ body {
   padding: 9rem 9rem;
   justify-content: flex-start;
 }
+@media only screen and (max-width: 78em) {
+  .vr-gallery {
+    padding: 8rem 5rem;
+  }
+}
 @media only screen and (min-width: 91em) {
   .vr-gallery {
     padding: 12rem 15rem;
@@ -87,6 +102,11 @@ body {
   padding: 0 9rem;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media only screen and (max-width: 78em) {
+  .picture-gallery {
+    padding: 3rem 5rem;
+  }
 }
 @media only screen and (min-width: 91em) {
   .picture-gallery {
@@ -137,6 +157,11 @@ body {
   margin-top: 11%;
   animation: moveInLeft 1s ease-out;
 }
+@media only screen and (max-width: 78em) {
+  .hero {
+    margin-top: 14%;
+  }
+}
 @media only screen and (min-width: 91em) {
   .hero {
     margin-top: 12%;
@@ -185,6 +210,12 @@ body {
   align-self: flex-end;
   width: 50%;
 }
+@media only screen and (max-width: 78em) {
+  .gallery-text {
+    padding-top: 4rem;
+    padding-left: 4rem;
+  }
+}
 @media only screen and (min-width: 91em) {
   .gallery-text {
     padding-top: 5rem;
@@ -232,6 +263,11 @@ body {
   padding: 4rem 9rem;
   align-items: center;
 }
+@media only screen and (max-width: 78em) {
+  .creations {
+    padding: 2rem 5rem;
+  }
+}
 @media only screen and (min-width: 91em) {
   .creations {
     padding: 2rem 15rem;
@@ -272,6 +308,11 @@ body {
 
 .picture-gallery__div {
   position: relative;
+}
+@media only screen and (max-width: 78em) {
+  .picture-gallery__div {
+    width: 25%;
+  }
 }
 @media only screen and (min-width: 103em) {
   .picture-gallery__div {
