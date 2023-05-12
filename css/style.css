@@ -20,6 +20,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 81.25%;
+  }
+}
 
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -40,6 +45,11 @@ body {
   padding: 5rem 9rem;
   position: relative;
 }
+@media only screen and (min-width: 112.5em) {
+  .section-one {
+    padding: 8rem 17rem;
+  }
+}
 
 .header {
   display: flex;
@@ -49,6 +59,12 @@ body {
 .vr-gallery {
   display: flex;
   padding: 9rem 9rem;
+  justify-content: flex-start;
+}
+@media only screen and (min-width: 112.5em) {
+  .vr-gallery {
+    padding: 14rem 17rem;
+  }
 }
 
 .picture-gallery {
@@ -56,6 +72,11 @@ body {
   padding: 0 9rem;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media only screen and (min-width: 112.5em) {
+  .picture-gallery {
+    padding: 3rem 24rem;
+  }
 }
 
 .logo-box {
@@ -96,6 +117,11 @@ body {
   margin-top: 11%;
   animation: moveInLeft 1s ease-out;
 }
+@media only screen and (min-width: 112.5em) {
+  .hero {
+    margin-top: 13%;
+  }
+}
 .hero__textbox {
   padding: 3rem;
   border: 2px solid var(--white);
@@ -134,11 +160,22 @@ body {
   align-self: flex-end;
   width: 50%;
 }
+@media only screen and (min-width: 112.5em) {
+  .gallery-text {
+    padding-top: 7rem;
+    padding-left: 7rem;
+  }
+}
 .gallery-text__large {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 4.5rem;
   color: var(--black);
+}
+@media only screen and (min-width: 112.5em) {
+  .gallery-text__large {
+    font-size: 5rem;
+  }
 }
 .gallery-text__small {
   margin-top: 2.5rem;
@@ -147,12 +184,22 @@ body {
   font-family: "Alata", sans-serif;
   font-weight: 400;
 }
+@media only screen and (min-width: 112.5em) {
+  .gallery-text__small {
+    font-size: 1.65rem;
+  }
+}
 
 .creations {
   display: flex;
   justify-content: space-between;
   padding: 4rem 9rem;
   align-items: center;
+}
+@media only screen and (min-width: 112.5em) {
+  .creations {
+    padding: 2rem 17rem;
+  }
 }
 .creations > * {
   text-transform: uppercase;
@@ -185,6 +232,11 @@ body {
 .picture-gallery__div {
   position: relative;
 }
+@media only screen and (min-width: 112.5em) {
+  .picture-gallery__div {
+    width: 23%;
+  }
+}
 .picture-gallery__text {
   position: absolute;
   top: 65%;
@@ -195,6 +247,13 @@ body {
   text-align: left;
   transition: color 0.3s ease;
   cursor: pointer;
+}
+@media only screen and (min-width: 112.5em) {
+  .picture-gallery__text {
+    top: 40%;
+    left: 30%;
+    width: 60%;
+  }
 }
 .picture-gallery__text--grid-text {
   width: 40%;

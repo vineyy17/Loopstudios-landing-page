@@ -48,6 +48,10 @@
     margin-top: 11%;
     animation: moveInLeft 1s ease-out;
 
+    @media only screen and (min-width: $bp-massive) {
+        margin-top: 13%;
+    }
+
     &__textbox {
         padding: 3rem;
         border: 2px solid var(--white);
@@ -89,6 +93,7 @@
 
 ///////////////////////////////////////
 // VR GALLERY TEXT
+
 .gallery-text {
     padding-top: 10rem;
     padding-left: 10rem;
@@ -99,11 +104,21 @@
     align-self: flex-end;
     width: 50%;
 
+    @media only screen and (min-width: $bp-massive) {
+        padding-top: 7rem;
+        padding-left: 7rem;
+    }
+
+
     &__large {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 4.5rem;
         color: var(--black);
+
+        @media only screen and (min-width: $bp-massive) {
+            font-size: 5rem;
+        }
     }
 
     &__small {
@@ -112,6 +127,10 @@
         color: var(--dark-gray);
         font-family: 'Alata', sans-serif;
         font-weight: 400;
+
+        @media only screen and (min-width: $bp-massive) {
+            font-size: 1.65rem;
+        }
     }
 }
 
@@ -124,6 +143,10 @@
     justify-content: space-between;
     padding: 4rem 9rem;
     align-items: center;
+
+    @media only screen and (min-width: $bp-massive) {
+        padding: 2rem 17rem;
+    }
 
     & > * {
         text-transform: uppercase;
@@ -165,6 +188,10 @@
 
     &__div {
         position: relative;
+
+        @media only screen and (min-width: $bp-massive) {
+            width: 23%;
+        }
     }
 
     &__text {
@@ -177,6 +204,12 @@
         text-align: left;
         transition: color 0.3s ease;
         cursor: pointer;
+
+        @media only screen and (min-width: $bp-massive) {
+            top: 40%;
+            left: 30%;
+            width: 60%;
+        }
 
         &--grid-text {
             width: 40%;
