@@ -1,3 +1,7 @@
+.container {
+    overflow-x: hidden;
+}
+
 .section-one {
     height: 100vh;
     background-image: url(/images/desktop/image-hero.jpg);
@@ -5,10 +9,6 @@
     background-position: top;
     padding: 5rem 9rem;
     position: relative;
-
-    // width: 100%;
-    // box-sizing: border-box;
-    // flex-shrink: 0;
 
     @media only screen and (max-width: $bp-big) {
         padding: 7rem 5rem;
@@ -41,7 +41,8 @@
     @media only screen and (max-width: $bp-tab) {
         flex-direction: column;
         align-items: center;
-        padding: 9rem 0;
+        padding: 4rem 0;
+        padding-bottom: 5rem;
     }
 
     @media only screen and (min-width: $bp-large) {
@@ -65,7 +66,8 @@
     }
 
     @media only screen and (max-width: $bp-tab) {
-        justify-content: flex-end;
+        justify-content: space-around;
+        padding: 2rem 0;
     }
 
     @media only screen and (min-width: $bp-large) {

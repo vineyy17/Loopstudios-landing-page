@@ -57,6 +57,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.container {
+  overflow-x: hidden;
+}
+
 .section-one {
   height: 100vh;
   background-image: url(/images/desktop/image-hero.jpg);
@@ -100,7 +104,8 @@ body {
   .vr-gallery {
     flex-direction: column;
     align-items: center;
-    padding: 9rem 0;
+    padding: 4rem 0;
+    padding-bottom: 5rem;
   }
 }
 @media only screen and (min-width: 91em) {
@@ -127,7 +132,8 @@ body {
 }
 @media only screen and (max-width: 58.3em) {
   .picture-gallery {
-    justify-content: flex-end;
+    justify-content: space-around;
+    padding: 2rem 0;
   }
 }
 @media only screen and (min-width: 91em) {
@@ -304,6 +310,11 @@ body {
     padding: 2rem 5rem;
   }
 }
+@media only screen and (max-width: 58.3em) {
+  .creations {
+    padding: 2rem 10rem;
+  }
+}
 @media only screen and (min-width: 91em) {
   .creations {
     padding: 2rem 15rem;
@@ -360,7 +371,7 @@ body {
 }
 @media only screen and (max-width: 58.3em) {
   .picture-gallery__div {
-    width: 50%;
+    width: 33.5%;
   }
 }
 @media only screen and (min-width: 103em) {
