@@ -6,7 +6,8 @@
 }
 
 
-$bp-massive: 112.5em;  // 1800px
+$bp-massive: 103em;  // 1800px
+$bp-large: 91em;   //1458px
 
 
 
@@ -27,6 +28,10 @@ html {
 
     @media only screen and (min-width: $bp-massive) {
         font-size: 81.25%;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        font-size: 68.75%;
     }
 }
 

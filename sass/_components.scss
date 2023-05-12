@@ -48,6 +48,10 @@
     margin-top: 11%;
     animation: moveInLeft 1s ease-out;
 
+    @media only screen and (min-width: $bp-large) {
+        margin-top: 12%;
+    }
+
     @media only screen and (min-width: $bp-massive) {
         margin-top: 13%;
     }
@@ -55,7 +59,7 @@
     &__textbox {
         padding: 3rem;
         border: 2px solid var(--white);
-        width: 58%;
+        flex: 0 0 55%;
     }
 
     &__text {
@@ -104,6 +108,11 @@
     align-self: flex-end;
     width: 50%;
 
+    @media only screen and (min-width: $bp-large) {
+        padding-top: 5rem;
+        padding-left: 5rem;
+    }
+
     @media only screen and (min-width: $bp-massive) {
         padding-top: 7rem;
         padding-left: 7rem;
@@ -128,6 +137,10 @@
         font-family: 'Alata', sans-serif;
         font-weight: 400;
 
+        @media only screen and (min-width: $bp-large) {
+            font-size: 1.45rem;
+        }
+
         @media only screen and (min-width: $bp-massive) {
             font-size: 1.65rem;
         }
@@ -143,6 +156,10 @@
     justify-content: space-between;
     padding: 4rem 9rem;
     align-items: center;
+
+    @media only screen and (min-width: $bp-large) {
+        padding: 2rem 15rem;
+    }
 
     @media only screen and (min-width: $bp-massive) {
         padding: 2rem 17rem;
@@ -257,7 +274,6 @@
 
 .logo-icon--footer {
     margin: .5rem;
-    padding: .7rem 0;
     cursor: pointer;
     border-bottom: 1.5px solid transparent;
     transition: border-color .3s ease;

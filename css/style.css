@@ -20,9 +20,14 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 103em) {
   html {
     font-size: 81.25%;
+  }
+}
+@media only screen and (min-width: 91em) {
+  html {
+    font-size: 68.75%;
   }
 }
 
@@ -45,7 +50,12 @@ body {
   padding: 5rem 9rem;
   position: relative;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 91em) {
+  .section-one {
+    padding: 7rem 15rem;
+  }
+}
+@media only screen and (min-width: 103em) {
   .section-one {
     padding: 8rem 17rem;
   }
@@ -61,7 +71,12 @@ body {
   padding: 9rem 9rem;
   justify-content: flex-start;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 91em) {
+  .vr-gallery {
+    padding: 12rem 15rem;
+  }
+}
+@media only screen and (min-width: 103em) {
   .vr-gallery {
     padding: 14rem 17rem;
   }
@@ -73,7 +88,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 91em) {
+  .picture-gallery {
+    padding: 3rem 17rem;
+  }
+}
+@media only screen and (min-width: 103em) {
   .picture-gallery {
     padding: 3rem 24rem;
   }
@@ -117,7 +137,12 @@ body {
   margin-top: 11%;
   animation: moveInLeft 1s ease-out;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 91em) {
+  .hero {
+    margin-top: 12%;
+  }
+}
+@media only screen and (min-width: 103em) {
   .hero {
     margin-top: 13%;
   }
@@ -125,7 +150,7 @@ body {
 .hero__textbox {
   padding: 3rem;
   border: 2px solid var(--white);
-  width: 58%;
+  flex: 0 0 55%;
 }
 .hero__text {
   text-transform: uppercase;
@@ -160,7 +185,13 @@ body {
   align-self: flex-end;
   width: 50%;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 91em) {
+  .gallery-text {
+    padding-top: 5rem;
+    padding-left: 5rem;
+  }
+}
+@media only screen and (min-width: 103em) {
   .gallery-text {
     padding-top: 7rem;
     padding-left: 7rem;
@@ -172,7 +203,7 @@ body {
   font-size: 4.5rem;
   color: var(--black);
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 103em) {
   .gallery-text__large {
     font-size: 5rem;
   }
@@ -184,7 +215,12 @@ body {
   font-family: "Alata", sans-serif;
   font-weight: 400;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 91em) {
+  .gallery-text__small {
+    font-size: 1.45rem;
+  }
+}
+@media only screen and (min-width: 103em) {
   .gallery-text__small {
     font-size: 1.65rem;
   }
@@ -196,7 +232,12 @@ body {
   padding: 4rem 9rem;
   align-items: center;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 91em) {
+  .creations {
+    padding: 2rem 15rem;
+  }
+}
+@media only screen and (min-width: 103em) {
   .creations {
     padding: 2rem 17rem;
   }
@@ -232,7 +273,7 @@ body {
 .picture-gallery__div {
   position: relative;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 103em) {
   .picture-gallery__div {
     width: 23%;
   }
@@ -248,7 +289,7 @@ body {
   transition: color 0.3s ease;
   cursor: pointer;
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 103em) {
   .picture-gallery__text {
     top: 40%;
     left: 30%;
@@ -289,7 +330,6 @@ body {
 
 .logo-icon--footer {
   margin: 0.5rem;
-  padding: 0.7rem 0;
   cursor: pointer;
   border-bottom: 1.5px solid transparent;
   transition: border-color 0.3s ease;

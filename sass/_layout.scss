@@ -6,6 +6,10 @@
     padding: 5rem 9rem;
     position: relative;
 
+    @media only screen and (min-width: $bp-large) {
+        padding: 7rem 15rem;
+    }
+
     @media only screen and (min-width: $bp-massive) {
         padding: 8rem 17rem;
     }
@@ -22,6 +26,10 @@
     padding: 9rem 9rem;
     justify-content: flex-start;
 
+    @media only screen and (min-width: $bp-large) {
+        padding: 12rem 15rem;
+    }
+
     @media only screen and (min-width: $bp-massive) {
         padding: 14rem 17rem;
     }
@@ -33,6 +41,10 @@
     flex-wrap: wrap;
 
     justify-content: space-between;
+
+    @media only screen and (min-width: $bp-large) {
+        padding: 3rem 17rem;
+    }
 
     @media only screen and (min-width: $bp-massive) {
         padding: 3rem 24rem;
