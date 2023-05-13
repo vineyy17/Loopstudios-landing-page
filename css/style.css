@@ -32,7 +32,7 @@ html {
 }
 @media only screen and (max-width: 58.3em) {
   html {
-    font-size: 50%;
+    font-size: 43.75%;
   }
 }
 @media only screen and (max-width: 46.6em) {
@@ -81,7 +81,7 @@ body {
 }
 @media only screen and (max-width: 78em) {
   .section-one {
-    padding: 7rem 5rem;
+    padding: 4rem 5rem;
   }
 }
 @media only screen and (max-width: 46.6em) {
@@ -229,6 +229,7 @@ body {
 @media only screen and (max-width: 46.6em) {
   .hero__textbox {
     margin-top: 20%;
+    flex: 0 0 100%;
   }
 }
 .hero__text {
@@ -546,12 +547,12 @@ body {
 
 .navbar__item--footer {
   padding: 0.7rem 0;
-  font-size: 2.2rem;
   align-self: center;
 }
 @media only screen and (max-width: 46.6em) {
   .navbar__item--footer {
     margin-right: 0;
+    font-size: 2.2rem;
   }
 }
 
@@ -578,36 +579,24 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 2.5rem;
+  right: 2.5rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(var(--black), 0.1);
   text-align: center;
   cursor: pointer;
 }
-@media only screen and (max-width: 46.6em) {
-  .navigation__button {
-    top: 5rem;
-    right: 5rem;
-  }
-}
 .navigation__background {
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 3rem;
+  right: 3rem;
   background-color: var(--black);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-}
-@media only screen and (max-width: 46.6em) {
-  .navigation__background {
-    top: 5.5rem;
-    right: 5.5rem;
-  }
 }
 .navigation__nav {
   height: 100vh;

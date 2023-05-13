@@ -70,6 +70,7 @@
 
         @media only screen and (max-width: $bp-small) {
             margin-top: 20%;
+            flex: 0 0 100%;
         }
     }
 
@@ -405,11 +406,11 @@
 
 .navbar__item--footer {
     padding: .7rem 0;
-    font-size: 2.2rem;
     align-self: center;
 
     @media only screen and (max-width: $bp-small) {
         margin-right: 0;
+        font-size: 2.2rem;
     } 
 }
 
@@ -440,18 +441,13 @@
         height: 7rem;
         width: 7rem;
         position: fixed;
-        top: 6rem;
-        right: 6rem;
+        top: 2.5rem;
+        right: 2.5rem;
         border-radius: 50%;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba(var(--black), .1);
         text-align: center;
         cursor: pointer;
-
-        @media only screen and (max-width: $bp-small) {
-            top: 5rem;
-            right: 5rem;
-        } 
 
     }
 
@@ -460,16 +456,11 @@
         width: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
+        top: 3rem;
+        right: 3rem;
         background-color: var(--black);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
-
-        @media only screen and (max-width: $bp-small) {
-            top: 5.5rem;
-            right: 5.5rem;
-        } 
     }
 
     &__nav {
