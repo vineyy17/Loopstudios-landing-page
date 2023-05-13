@@ -74,6 +74,11 @@ body {
     padding: 7rem 5rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .section-one {
+    background-image: url(/images/mobile/image-hero-m.jpg);
+  }
+}
 @media only screen and (min-width: 91em) {
   .section-one {
     padding: 7rem 15rem;
