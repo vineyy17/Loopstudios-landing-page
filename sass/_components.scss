@@ -473,6 +473,8 @@
         opacity: 0;
         width: 0;
         transition: all .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+        display: none;
     }
 
     &__list {
@@ -502,11 +504,6 @@
             background-image: linear-gradient(120deg,  transparent 0%, transparent 50%, var(--white) 50%);
             background-size: 240%;
             transition: all .4s;
-
-            span {
-                margin-right: 1.5rem;
-                display: inline-block;
-            }
         }
 
         &:hover,
