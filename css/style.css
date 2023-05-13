@@ -354,6 +354,12 @@ body {
     padding: 2rem 10rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .creations {
+    justify-content: center;
+    padding: 0 2rem;
+  }
+}
 @media only screen and (min-width: 91em) {
   .creations {
     padding: 2rem 15rem;
@@ -416,6 +422,14 @@ body {
 @media only screen and (max-width: 58.3em) {
   .picture-gallery__div {
     width: 33.5%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .picture-gallery__div {
+    width: 100%;
+  }
+  .picture-gallery__div:nth-child(n+7) {
+    display: block;
   }
 }
 @media only screen and (min-width: 103em) {
