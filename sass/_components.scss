@@ -15,6 +15,10 @@
     font-weight: 400;
     cursor: pointer;
 
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+    }
+
     &__item {
         margin-right: 2rem;
         display: flex;
@@ -119,6 +123,11 @@
         padding-right: 10rem;
     }
 
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     @media only screen and (min-width: $bp-large) {
         padding-top: 5rem;
         padding-left: 5rem;
@@ -141,6 +150,11 @@
             font-size: 4rem;
         }
 
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+            font-size: 5rem;
+        }
+
         @media only screen and (min-width: $bp-massive) {
             font-size: 5rem;
         }
@@ -157,6 +171,12 @@
             width: 50%;
             margin-top: 0;
             font-size: 1.25rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+            font-size: 1.7rem;
+            margin-top: 2rem;
         }
 
         @media only screen and (min-width: $bp-large) {
@@ -219,6 +239,10 @@
         letter-spacing: .4rem;
         cursor: pointer;
         transition: all .3s;
+
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+        }
 
         &:hover {
             background-color: var(--black);

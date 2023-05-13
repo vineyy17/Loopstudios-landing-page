@@ -48,6 +48,9 @@
         padding: 4rem 0;
         padding-bottom: 5rem;
     }
+    @media only screen and (max-width: $bp-small) {
+        padding: 9rem 2rem;
+    }
 
     @media only screen and (min-width: $bp-large) {
         padding: 12rem 15rem;
