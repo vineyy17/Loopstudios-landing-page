@@ -217,6 +217,11 @@ body {
   margin-top: 11%;
   animation: moveInLeft 1s ease-out;
 }
+@media only screen and (max-width: 46.6em) {
+  .hero {
+    justify-content: center;
+  }
+}
 .hero__textbox {
   padding: 3rem;
   border: 2px solid var(--white);
@@ -580,6 +585,9 @@ body {
   }
 }
 
+.navigation__hide {
+  display: none;
+}
 @media only screen and (min-width: 46.6em) {
   .navigation {
     display: none;
