@@ -58,8 +58,8 @@ body {
   min-height: 100vh;
   background-color: var(--white);
   font-size: 1.5rem;
-  background-size: cover;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 ::selection {
@@ -566,11 +566,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 46.6em) {
-  .navigation {
-    display: none;
-  }
-}
 .navigation__checkbox {
   display: none;
 }
@@ -607,7 +602,6 @@ body {
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  display: none;
 }
 .navigation__list {
   position: absolute;
