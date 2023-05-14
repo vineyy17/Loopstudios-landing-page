@@ -4,6 +4,9 @@
 .logo-box {
     flex: 0 0 auto;
     cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 ///////////////////////////////////////
@@ -70,7 +73,7 @@
 
         @media only screen and (max-width: $bp-small) {
             margin-top: 20%;
-            flex: 0 0 100%;
+            flex: 0 0 80%;
         }
     }
 
@@ -108,9 +111,17 @@
 
         @media only screen and (max-width: $bp-tab) {
             width: 100%;
-            display: flex;
-            justify-content: center;
             margin-right: 0;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
         }
     }
 }
@@ -302,6 +313,10 @@
             width: 33.5%;
         }
 
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+
         @media only screen and (min-width: $bp-massive) {
             width: 23%;
         }
@@ -342,8 +357,8 @@
         margin-top: 1.5rem;
 
         @media only screen and (max-width: $bp-small) {
-            width: 100vw;
-        }
+            width: 100%;
+        }   
     }
 
     &__div:hover &__image {
@@ -428,6 +443,10 @@
 
 .navigation {
 
+    @media only screen and (min-width: $bp-small) {
+        display: none;
+    } 
+
     &__checkbox {
         display: none;
     }
@@ -437,8 +456,8 @@
         height: 7rem;
         width: 7rem;
         position: fixed;
-        top: 2.5rem;
-        right: 2.5rem;
+        // top: 2.5rem;
+        // right: 2.5rem;
         border-radius: 50%;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba(var(--black), .1);
@@ -452,8 +471,8 @@
         width: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 3rem;
-        right: 3rem;
+        // top: 3rem;
+        // right: 3rem;
         background-color: var(--black);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);

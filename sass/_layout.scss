@@ -1,6 +1,6 @@
-.container {
-    overflow-x: hidden;
-}
+// .container {
+//     overflow-x: hidden;
+// }
 
 .section-one {
     height: 100vh;
@@ -16,6 +16,8 @@
 
     @media only screen and (max-width: $bp-small) {
         background-image: url(/images/mobile/image-hero-m.jpg);
+        // padding: 0;
+        margin: 0;
     }
 
     @media only screen and (min-width: $bp-large) {

@@ -17,7 +17,6 @@
 }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
 }
 @media only screen and (max-width: 78em) {
@@ -67,10 +66,6 @@ body {
   color: var(--white);
 }
 
-.container {
-  overflow-x: hidden;
-}
-
 .section-one {
   height: 100vh;
   background-image: url(/images/desktop/image-hero.jpg);
@@ -87,6 +82,7 @@ body {
 @media only screen and (max-width: 46.6em) {
   .section-one {
     background-image: url(/images/mobile/image-hero-m.jpg);
+    margin: 0;
   }
 }
 @media only screen and (min-width: 91em) {
@@ -176,6 +172,8 @@ body {
 .logo-box {
   flex: 0 0 auto;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -229,7 +227,7 @@ body {
 @media only screen and (max-width: 46.6em) {
   .hero__textbox {
     margin-top: 20%;
-    flex: 0 0 100%;
+    flex: 0 0 80%;
   }
 }
 .hero__text {
@@ -257,9 +255,17 @@ body {
 @media only screen and (max-width: 58.3em) {
   .gallery-image__item {
     width: 100%;
-    display: flex;
-    justify-content: center;
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 46.6em) {
+  .gallery-image__item {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 46.6em) {
+  .gallery-image__image {
+    width: 100%;
   }
 }
 
@@ -450,6 +456,11 @@ body {
     width: 33.5%;
   }
 }
+@media only screen and (max-width: 46.6em) {
+  .picture-gallery__div {
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 103em) {
   .picture-gallery__div {
     width: 23%;
@@ -491,7 +502,7 @@ body {
 }
 @media only screen and (max-width: 46.6em) {
   .picture-gallery__image {
-    width: 100vw;
+    width: 100%;
   }
 }
 .picture-gallery__div:hover .picture-gallery__image {
@@ -566,6 +577,11 @@ body {
   }
 }
 
+@media only screen and (min-width: 46.6em) {
+  .navigation {
+    display: none;
+  }
+}
 .navigation__checkbox {
   display: none;
 }
@@ -574,8 +590,6 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 2.5rem;
-  right: 2.5rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(var(--black), 0.1);
@@ -587,8 +601,6 @@ body {
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 3rem;
-  right: 3rem;
   background-color: var(--black);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
