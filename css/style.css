@@ -31,10 +31,15 @@ html {
 }
 @media only screen and (max-width: 58.3em) {
   html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 46.4em) {
+  html {
     font-size: 43.75%;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   html {
     font-size: 37.5%;
   }
@@ -79,7 +84,7 @@ body {
     padding: 4rem 5rem;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .section-one {
     background-image: url(/images/mobile/image-hero-m.jpg);
     padding: 4rem 4rem;
@@ -119,9 +124,14 @@ body {
     padding-bottom: 5rem;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 46.4em) {
   .vr-gallery {
-    padding: 10rem 4rem;
+    padding: 2rem 4rem;
+  }
+}
+@media only screen and (max-width: 33em) {
+  .vr-gallery {
+    padding: 10rem 5rem;
   }
 }
 @media only screen and (min-width: 91em) {
@@ -148,11 +158,10 @@ body {
 }
 @media only screen and (max-width: 58.3em) {
   .picture-gallery {
-    justify-content: space-around;
     padding: 2rem 0;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .picture-gallery {
     padding: 3rem 0;
     flex-direction: column;
@@ -180,12 +189,12 @@ body {
   font-weight: 400;
   cursor: pointer;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 46.4em) {
   .navbar--hero {
     display: none;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .navbar--footer {
     flex-direction: column;
   }
@@ -217,7 +226,7 @@ body {
   margin-top: 11%;
   animation: moveInLeft 1s ease-out;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .hero {
     justify-content: center;
   }
@@ -227,7 +236,7 @@ body {
   border: 2px solid var(--white);
   flex: 0 0 55%;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .hero__textbox {
     margin-top: 20%;
     flex: 0 0 100%;
@@ -259,14 +268,20 @@ body {
   .gallery-image__item {
     width: 100%;
     margin-right: 0;
+    justify-content: center;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .gallery-image__item {
     width: 100%;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 58.3em) {
+  .gallery-image__image {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 33em) {
   .gallery-image__image {
     width: 100%;
   }
@@ -290,20 +305,22 @@ body {
 }
 @media only screen and (max-width: 58.3em) {
   .gallery-text {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-}
-@media only screen and (max-width: 46.6em) {
-  .gallery-text {
     flex-direction: column;
-    align-items: center;
-    padding: 5rem 4rem;
+    padding: 5rem 12rem;
     padding-bottom: 0;
     text-align: center;
+    align-self: center;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 46.4em) {
+  .gallery-text {
+    padding: 5rem 2rem;
+  }
+}
+@media only screen and (max-width: 33em) {
+  .gallery-text {
+    padding: 5rem 4rem;
   }
 }
 @media only screen and (min-width: 91em) {
@@ -326,11 +343,11 @@ body {
 }
 @media only screen and (max-width: 58.3em) {
   .gallery-text__large {
-    width: 50%;
+    width: 100%;
     font-size: 4rem;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .gallery-text__large {
     width: 100%;
     font-size: 5rem;
@@ -350,12 +367,12 @@ body {
 }
 @media only screen and (max-width: 58.3em) {
   .gallery-text__small {
-    width: 50%;
-    margin-top: 0;
+    width: 100%;
+    margin-top: 3rem;
     font-size: 1.25rem;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .gallery-text__small {
     width: 100%;
     font-size: 1.8rem;
@@ -387,10 +404,15 @@ body {
 }
 @media only screen and (max-width: 58.3em) {
   .creations {
-    padding: 2rem 10rem;
+    padding: 2rem 12rem;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 46.4em) {
+  .creations {
+    padding: 2rem 4rem;
+  }
+}
+@media only screen and (max-width: 33em) {
   .creations {
     padding: 0;
     justify-content: center;
@@ -416,7 +438,7 @@ body {
   display: flex;
   padding-top: 1rem;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .creations__heading {
     font-size: 5rem;
     justify-content: center;
@@ -436,7 +458,7 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .creations__button {
     display: none;
   }
@@ -446,7 +468,17 @@ body {
   color: var(--white);
 }
 
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 58.3em) {
+  .picture-gallery {
+    padding: 5rem 12rem;
+  }
+}
+@media only screen and (max-width: 46.4em) {
+  .picture-gallery {
+    padding: 3rem 4rem;
+  }
+}
+@media only screen and (max-width: 33em) {
   .picture-gallery {
     padding: 5rem 4rem;
   }
@@ -461,10 +493,10 @@ body {
 }
 @media only screen and (max-width: 58.3em) {
   .picture-gallery__div {
-    width: 33.5%;
+    width: 100%;
   }
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .picture-gallery__div {
     width: 100%;
   }
@@ -485,7 +517,7 @@ body {
   transition: color 0.3s ease;
   cursor: pointer;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .picture-gallery__text {
     top: 40%;
     width: 50%;
@@ -508,9 +540,16 @@ body {
   transition: opacity 0.3s ease;
   margin-top: 1.5rem;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 58.3em) {
   .picture-gallery__image {
     width: 100%;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 33em) {
+  .picture-gallery__image {
+    width: 100%;
+    margin-top: 3rem;
   }
 }
 .picture-gallery__div:hover .picture-gallery__image {
@@ -530,7 +569,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .footer__link {
     flex-direction: column;
     margin-bottom: 2rem;
@@ -542,7 +581,7 @@ body {
   align-items: center;
   padding-top: 2rem;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .footer__info {
     flex-direction: column;
     text-align: center;
@@ -558,7 +597,7 @@ body {
 .logo-icon--footer:hover {
   border-color: var(--white);
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .logo-icon--footer {
     margin-top: 2rem;
   }
@@ -568,7 +607,7 @@ body {
   padding: 0.7rem 0;
   align-self: center;
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .navbar__item--footer {
     margin-right: 0;
     font-size: 2.2rem;
@@ -578,7 +617,7 @@ body {
 .legal-text {
   color: var(--dark-gray);
 }
-@media only screen and (max-width: 46.6em) {
+@media only screen and (max-width: 33em) {
   .legal-text {
     font-size: 1.8rem;
     margin-top: 2rem;
@@ -588,7 +627,7 @@ body {
 .navigation__hide {
   display: none;
 }
-@media only screen and (min-width: 46.6em) {
+@media only screen and (min-width: 46.4em) {
   .navigation {
     display: none;
   }
@@ -644,7 +683,7 @@ body {
 }
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 300;
   padding: 1rem 2rem;
   color: var(--white);

@@ -13,7 +13,7 @@
 
     &--hero {
 
-        @media only screen and (max-width: $bp-small) {
+        @media only screen and (max-width: $bp-mid-tab) {
             display: none;
         }
 
@@ -116,6 +116,7 @@
         @media only screen and (max-width: $bp-tab) {
             width: 100%;
             margin-right: 0;
+            justify-content: center;
         }
 
         @media only screen and (max-width: $bp-small) {
@@ -124,6 +125,11 @@
     }
 
     &__image {
+
+        @media only screen and (max-width: $bp-tab) {
+            width: 100%;
+        }
+
         @media only screen and (max-width: $bp-small) {
             width: 100%;
         }
@@ -149,19 +155,20 @@
     }
 
     @media only screen and (max-width: $bp-tab) {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        padding: 5rem 12rem;
+        padding-bottom: 0;
+        text-align: center;
+        align-self: center;
         width: 100%;
-        padding-left: 10rem;
-        padding-right: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-mid-tab) {
+        padding: 5rem 2rem;
     }
 
     @media only screen and (max-width: $bp-small) {
-        flex-direction: column;
-        align-items: center;
         padding: 5rem 4rem;
-        padding-bottom: 0;
-        text-align: center;
     }
 
     @media only screen and (min-width: $bp-large) {
@@ -182,7 +189,7 @@
         color: var(--black);
 
         @media only screen and (max-width: $bp-tab) {
-            width: 50%;
+            width: 100%;
             font-size: 4rem;
         }
 
@@ -204,8 +211,8 @@
         font-weight: 400;
 
         @media only screen and (max-width: $bp-tab) {
-            width: 50%;
-            margin-top: 0;
+            width: 100%;
+            margin-top: 3rem;
             font-size: 1.25rem;
         }
 
@@ -241,7 +248,11 @@
     }
 
     @media only screen and (max-width: $bp-tab) {
-        padding: 2rem 10rem;
+        padding: 2rem 12rem;
+    }
+
+    @media only screen and (max-width: $bp-mid-tab) {
+        padding: 2rem 4rem;
     }
 
     @media only screen and (max-width: $bp-small) {
@@ -305,6 +316,14 @@
 
 .picture-gallery {
 
+    @media only screen and (max-width: $bp-tab) {
+        padding: 5rem 12rem;
+    }
+
+    @media only screen and (max-width: $bp-mid-tab) {
+        padding: 3rem 4rem;
+    }
+
     @media only screen and (max-width: $bp-small) {
         padding: 5rem 4rem;
     }
@@ -318,7 +337,7 @@
 
 
         @media only screen and (max-width: $bp-tab) {
-            width: 33.5%;
+            width: 100%;
         }
 
         @media only screen and (max-width: $bp-small) {
@@ -364,8 +383,14 @@
         transition: opacity 0.3s ease;
         margin-top: 1.5rem;
 
+        @media only screen and (max-width: $bp-tab) {
+            width: 100%;
+            margin-top: 3rem;
+        } 
+
         @media only screen and (max-width: $bp-small) {
             width: 100%;
+            margin-top: 3rem;
         }   
     }
 
@@ -455,7 +480,7 @@
         display: none;
     }
 
-    @media only screen and (min-width: $bp-small) {
+    @media only screen and (min-width: $bp-mid-tab) {
         display: none;
     } 
 
@@ -523,7 +548,7 @@
         &:link,
         &:visited {
             display: inline-block;
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 300;
             padding: 1rem 2rem;
             color: var(--white);
