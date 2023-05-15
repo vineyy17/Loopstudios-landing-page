@@ -249,6 +249,11 @@ body {
     font-size: 5rem;
   }
 }
+@media only screen and (max-width: 33em) {
+  .hero__text {
+    font-size: 7rem;
+  }
+}
 
 @keyframes moveInLeft {
   0% {
