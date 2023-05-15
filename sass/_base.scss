@@ -27,6 +27,7 @@ $bp-small: 33em;  // 530px
 
 html {
     font-size: 62.5%; 
+    scroll-behavior: smooth;
 
     @media only screen and (max-width: $bp-big) {
         font-size: 56.25%;
